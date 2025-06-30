@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InstagramChecker.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.InstagramChecker.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.InstagramChecker.props",
+      "PackagePath": "build\\InstagramChecker.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.InstagramChecker.props",
+      "PackagePath": "buildMultiTargeting\\InstagramChecker.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.InstagramChecker.props",
+      "PackagePath": "buildTransitive\\InstagramChecker.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

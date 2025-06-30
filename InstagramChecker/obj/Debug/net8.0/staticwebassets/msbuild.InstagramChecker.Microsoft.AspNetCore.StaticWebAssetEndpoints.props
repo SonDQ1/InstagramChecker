@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/InstagramChecker/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7143"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Jun 2025 11:07:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/InstagramChecker/index.yc3lxpad6r.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yc3lxpad6r"},{"Name":"integrity","Value":"sha256-Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME="},{"Name":"label","Value":"_content/InstagramChecker/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7143"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Jun 2025 11:07:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

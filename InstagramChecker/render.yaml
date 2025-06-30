@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: instagram-checker
+    runtime: docker
+    region: oregon
+    plan: free

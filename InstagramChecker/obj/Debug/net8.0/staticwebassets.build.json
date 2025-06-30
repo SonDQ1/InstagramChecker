@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "s6KYC8hpnxvOYbH/7tEvhPj7fmbPqtouJTLB1G/f/Vw=",
+  "Source": "InstagramChecker",
+  "BasePath": "_content/InstagramChecker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "InstagramChecker\\wwwroot",
+      "Source": "InstagramChecker",
+      "ContentRoot": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\",
+      "BasePath": "_content/InstagramChecker",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
+      "SourceId": "InstagramChecker",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\",
+      "BasePath": "_content/InstagramChecker",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yc3lxpad6r",
+      "Integrity": "Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 11:07:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME="
+        }
+      ]
+    },
+    {
+      "Route": "index.yc3lxpad6r.html",
+      "AssetFile": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 11:07:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yc3lxpad6r"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qqko1FSmGrhBr2HERcUXmv6VuNVMXH51MBrxyIpuKME="
+        }
+      ]
+    }
+  ]
+}

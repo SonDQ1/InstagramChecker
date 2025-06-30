@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Check Instagram Live/Die</title>
+    <style>
+/* Import Google Font */
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans';
+  color: hsl(0, 0%, 50%);
+}
+
+/* Containing areas */
+.container { 
+  width: 600px; 
+  margin: 1em auto;
+}
+.ta-container {
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 0.25em;
+  margin: 0.25em 0 1.5em;
+}
+.hasfocus {
+  box-shadow: 0px 0px 6px hsl(210, 50%, 60%);
+}
+
+/* The textarea itself */
+textarea { 
+  padding: 0.25em;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  vertical-align:bottom;
+  color: #000000;
+  border-radius: 0.25em;
+  outline: none;
+}
+
+/* The status bar */ 
+.status-bar { 
+  background: hsl(0, 0%, 90%);
+  padding: 0.25em;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  width: 100%;
+  color: hsl(0, 0%, 50%);
+  border-radius: 0 0 0.25em 0.25em;
+}
+table { 
+  width: auto;
+  margin-left: auto;
+  line-height: 1em;
+}
+.charcount, .remaining { 
+  font-weight: bold;
+}
+.over {
+  color: hsl(0, 80%, 60%);
+}
+/* The submit button */
+#submitbtn {
+  padding: 0.4em 1.2em;
+  background: #00ff21 ;
+  border: 1px solid hsl(0, 0%, 60%);
+  color: hsl(0, 0%, 50%);
+  border-radius: 0.25em;
+}
+#submitbtn:enabled:hover {
+	  background: #00ff21;
+}
+#submitbtn:enabled:active {
+  background: #00ff21;
+  color: #000000;
+}
+#submitbtn:disabled { 
+  background: #00ff21;
+  color: #000000;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <form id="theform" action="javascript:void(0);">
+
+            <label for="about-yourself">Nhập Username(mỗi username một dòng)</label>
+            <div class="ta-container">
+                <textarea id="inputUsernames" class="ta" name="about-yourself" rows="6" cols="75" data-maxchars="20" data-over="false" placeholder="hoaanhthao23" required></textarea>
+                <div class="status-bar">
+                    <table>
+                        <tr><td>Characters:</td><td class="charcount"></td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <label for="concurrent">Số luồng đồng thời:</label>
+            <select id="concurrent">
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+            <input id="submitbtn" onclick="startCheck()" type="submit" value="Check">
+            <button type="button" onclick="downloadLive()" style="background:#00ff21">Xuất Live (.txt)</button>
+            <br>
+            <label for="your-proposal">Live:</label>
+            <div class="ta-container">
+                <textarea id="liveBox" class="ta" name="your-proposal" rows="6" cols="75" data-maxchars="25" data-over="false" placeholder="..." required readonly></textarea>
+                <div class="status-bar">
+                    <table>
+                        <tr><td>Characters:</td><td class="charcount"></td></tr>
+                    </table>
+                </div>
+            </div>
+            <label for="supporting-info">Die:</label>
+            <div class="ta-container">
+                <textarea id="dieBox" readonly class="ta" name="supporting-info" rows="6" cols="75" data-maxchars="40" data-over="false" placeholder="Enter text here..." required></textarea>
+                <div class="status-bar">
+                    <table>
+                        <tr><td>Characters:</td><td class="charcount"></td></tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+        </form>
+
+    </div>
+    <script>
+        async function checkUsername(username) {
+            try {
+                const res = await fetch(`/api/check?username=${encodeURIComponent(username)}`);
+                const data = await res.json();
+                return { username, status: data.status || 'Unknown' };
+            } catch (e) {
+                return { username, status: 'Error' };
+            }
+        }
+
+        async function startCheck() {
+            const input = document.getElementById('inputUsernames').value;
+            const concurrent = parseInt(document.getElementById('concurrent').value);
+
+            const liveBox = document.getElementById('liveBox');
+            const dieBox = document.getElementById('dieBox');
+
+
+            liveBox.value = "";
+            dieBox.value = "";
+
+            const usernames = input
+                .split('\n')
+                .map(x => x.trim())
+                .filter(x => x !== "");
+
+            let index = 0;
+
+            async function worker() {
+                while (index < usernames.length) {
+                    const i = index++;
+                    const username = usernames[i];
+                    const result = await checkUsername(username);
+
+                    const status = result.status === "Live" ? "Live" : "Die";
+
+
+
+                    if (status === "Live") {
+                        liveBox.value += result.username + "\n";
+                        updateLineCount(liveBox, liveBox.parentElement);
+                    } else {
+                        dieBox.value += result.username + "\n";
+                        updateLineCount(dieBox, dieBox.parentElement);
+                    }
+                }
+            }
+
+            const tasks = [];
+            for (let i = 0; i < concurrent; i++) {
+                tasks.push(worker());
+            }
+
+            await Promise.all(tasks);
+        }
+    </script>
+    <script>
+        function updateLineCount(textarea, container) {
+            const lines = textarea.value.trim() === "" ? 0 : textarea.value.split(/\r?\n/).length;
+            const statusBar = container.querySelector('.status-bar');
+            const charCount = statusBar.querySelector('.charcount');
+            const charLabel = statusBar.querySelector('td');
+
+            charCount.textContent = lines;
+            charLabel.textContent = "Lines:";
+        }
+
+        document.querySelectorAll('.ta').forEach(ta => {
+            const container = ta.parentElement;
+            ta.addEventListener('input', () => updateLineCount(ta, container));
+            updateLineCount(ta, container);
+        });
+    </script>
+    <script>
+        function downloadLive() {
+            const liveBox = document.getElementById('liveBox');
+            const text = liveBox.value.trim();
+            if (text === "") {
+                alert("Không có tài khoản Live để xuất.");
+                return;
+            }
+
+            const blob = new Blob([text], { type: "text/plain" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "LiveAccounts.txt";
+            link.click();
+            URL.revokeObjectURL(link.href);
+        }
+    </script>
+
+</body>
+</html>
