@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\codeTest\\InstagramChecker\\",
+  "WorkspaceRootPath": "E:\\CheckIG\\InstagramChecker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\codetest\\instagramchecker\\instagramchecker\\render.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\checkig\\instagramchecker\\instagramchecker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\checkig\\instagramchecker\\instagramchecker\\render.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\render.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\codetest\\instagramchecker\\instagramchecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\checkig\\instagramchecker\\instagramchecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\codetest\\instagramchecker\\instagramchecker\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\checkig\\instagramchecker\\instagramchecker\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\codeTest\\InstagramChecker\\InstagramChecker\\user_agents.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InstagramChecker\\user_agents.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\checkig\\instagramchecker\\instagramchecker\\instagram_cookie.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\instagram_cookie.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\codetest\\instagramchecker\\instagramchecker\\instagram_cookie.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\instagram_cookie.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|e:\\checkig\\instagramchecker\\instagramchecker\\user_agents.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E3B320F6-AAE8-4C84-985C-55F9C53E5ED5}|InstagramChecker\\InstagramChecker.csproj|solutionrelative:instagramchecker\\user_agents.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,10 +39,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\Dockerfile",
+              "RelativeDocumentMoniker": "InstagramChecker\\Dockerfile",
+              "ToolTip": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\Dockerfile",
+              "RelativeToolTip": "InstagramChecker\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-30T11:31:58.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "render.yaml",
-              "DocumentMoniker": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\render.yaml",
+              "DocumentMoniker": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\render.yaml",
               "RelativeDocumentMoniker": "InstagramChecker\\render.yaml",
-              "ToolTip": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\render.yaml",
+              "ToolTip": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\render.yaml",
               "RelativeToolTip": "InstagramChecker\\render.yaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
@@ -49,9 +66,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "instagram_cookie.txt",
-              "DocumentMoniker": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\instagram_cookie.txt",
+              "DocumentMoniker": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\instagram_cookie.txt",
               "RelativeDocumentMoniker": "InstagramChecker\\instagram_cookie.txt",
-              "ToolTip": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\instagram_cookie.txt",
+              "ToolTip": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\instagram_cookie.txt",
               "RelativeToolTip": "InstagramChecker\\instagram_cookie.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAACLAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -59,42 +76,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "user_agents.txt",
-              "DocumentMoniker": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\user_agents.txt",
+              "DocumentMoniker": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\user_agents.txt",
               "RelativeDocumentMoniker": "InstagramChecker\\user_agents.txt",
-              "ToolTip": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\user_agents.txt",
+              "ToolTip": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\user_agents.txt",
               "RelativeToolTip": "InstagramChecker\\user_agents.txt",
               "ViewState": "AgIAAC4AAAAAAAAAAAAowHIAAACOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-06-30T08:08:29.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T08:08:29.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "InstagramChecker\\wwwroot\\index.html",
+              "ToolTip": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
+              "RelativeToolTip": "InstagramChecker\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-30T03:50:43.621Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "InstagramChecker\\wwwroot\\index.html",
-              "ToolTip": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\wwwroot\\index.html",
-              "RelativeToolTip": "InstagramChecker\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-30T03:50:43.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\Program.cs",
+              "DocumentMoniker": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\Program.cs",
               "RelativeDocumentMoniker": "InstagramChecker\\Program.cs",
-              "ToolTip": "E:\\codeTest\\InstagramChecker\\InstagramChecker\\Program.cs",
+              "ToolTip": "E:\\CheckIG\\InstagramChecker\\InstagramChecker\\Program.cs",
               "RelativeToolTip": "InstagramChecker\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T03:09:38.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T03:09:38.117Z"
             }
           ]
         }
